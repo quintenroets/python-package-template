@@ -1,5 +1,5 @@
 [project]
-name = "python-package-template"
+name = "python-package-qtemplate"
 version = "0.1.0"
 description = "Python package"
 authors = [{name = "Quinten Roets", email = "qdr2104@columbia.edu"}]
