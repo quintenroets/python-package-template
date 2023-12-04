@@ -6,6 +6,19 @@ on:
       - main
 
 jobs:
+  check-pre-commit:
+    name: Check pre-commit
+    runs-on: ubuntu-latest
+    environment: Release
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Cache dependencies
+        uses: actions/setup-python@v3
+      - name: Check pre-commit
+        uses: pre-commit/action@v3.0.0
+
   publish:
     name: Publish package
     runs-on: ubuntu-latest
@@ -16,13 +29,13 @@ jobs:
       id-token: write
     
     steps:
-      - name: Check out code
+      - name: Checkout code
         uses: actions/checkout@v3
 
       - name: Install dependencies
         run: |
-            python -m pip install --upgrade pip
-            pip install build
+          python -m pip install --upgrade pip
+          pip install build
 
       - name: Build package
         run: python -m build
@@ -31,3 +44,17 @@ jobs:
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
           skip-existing: true
+
+  release:
+    name: Release package
+    runs-on: ubuntu-latest
+    environment: Release
+      
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Create Release
+        uses: elgohr/Github-Release-Action@v5
+        with:
+          title: ${{ github.ref }}
