@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run pre-commit
-        uses: quintenroets/workflows/run-pre-commit.yml@main
+        uses: quintenroets/workflows/run-pre-commit@main
