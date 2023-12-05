@@ -12,6 +12,8 @@ jobs:
     environment: Release
     
     steps:
+      - name: Extract Python version
+        run: 
       - name: Checkout code
         uses: actions/checkout@v3
       - name: Cache dependencies
