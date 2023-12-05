@@ -5,4 +5,5 @@ on:
 
 jobs:
   run-pre-commit:
-    uses: quintenroets/workflows/run-pre-commit.yml
+    name: Run pre-commit
+    uses: quintenroets/workflows/run-pre-commit.yml@main
