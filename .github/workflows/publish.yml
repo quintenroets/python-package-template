@@ -6,63 +6,11 @@ on:
       - main
 
 jobs:
-  check-pre-commit:
-    name: Check pre-commit
-    runs-on: ubuntu-latest
-    environment: Release
-    
-    steps:
-      - name: Extract Python version
-        run: 
-      - name: Checkout code
-        uses: actions/checkout@v3
-      - name: Cache dependencies
-        uses: actions/setup-python@v3
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install bump2version
-      - name: Check pre-commit
-        uses: pre-commit/action@v3.0.0
-
   publish:
     name: Publish package
     runs-on: ubuntu-latest
     environment: Release
 
-    permissions:
-      contents: read
-      id-token: write
-    
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install build
-
-      - name: Build package
-        run: python -m build
-
-      - name: Upload distribution to PyPI
-        uses: pypa/gh-action-pypi-publish@release/v1
-        with:
-          skip-existing: true
-
-  release:
-    name: Release package
-    runs-on: ubuntu-latest
-    environment: Release
-      
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      - name: Create Release
-        uses: elgohr/Github-Release-Action@v5
-        env:
-          GH_TOKEN: ${{ github.token }}
-        with:
-          title: ${{ github.ref }}
+      - name: Publish
+        uses: quintenroets/workflows/publish@main
