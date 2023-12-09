@@ -17,8 +17,9 @@
 5) Configure displayed project information
    * Enable releases
    * Disable deployments and packages
-=============================================================
 
+=============================================================
+Run
 ```shell
 python_package_template
 ```
