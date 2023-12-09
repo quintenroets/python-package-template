@@ -13,7 +13,9 @@
            * update `pip install ..`
            * remove `pip install git+https://github.com..`
    * Disable
-      1) README.md: remove `pip install python-package-qtemplate`
+      1) Update public package name
+         * pyproject.toml: update `name = ..`
+         * README.md: remove `pip install python-package-qtemplate`
 4) Configure displayed project information
    * Enable releases
    * Disable deployments and packages
