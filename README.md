@@ -1,5 +1,4 @@
 # Python Package Template
-Python package published on PyPI
 
 ## Usage
 1) Choose repository name
@@ -18,19 +17,18 @@ Python package published on PyPI
 5) Configure displayed project information
    * Enable releases
    * Disable deployments and packages
-6) Run
-     ```shell
-     python_package_template
-     ```
+=============================================================
+Run
+```shell
+python_package_template
+```
 ## Installation
-
-Make sure you are using python3.10+
-
 ```shell
 pip install python-package-qtemplate
 ```
 or
-
 ```shell
 pip install git+https://github.com/quintenroets/python-package-template
 ```
+
+Make sure you are using python3.10+
