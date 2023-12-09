@@ -1,5 +1,4 @@
 name: Validate
-description: 'Validate project by running linting, formatting, and testing'
 
 on:
   push:
