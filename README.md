@@ -9,9 +9,9 @@ Python package published on PyPI
    * Enable releases
    * Disable deployments and packages
 5) Run
-   * ```shell
-     python_package_template
-     ```
+   ```shell
+   python_package_template
+   ```
 ## Installation
 
 Make sure you are using python3.10+
