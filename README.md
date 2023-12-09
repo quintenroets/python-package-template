@@ -14,9 +14,11 @@
            * remove `pip install git+https://github.com..`
    * Disable
       1) README.md: remove `pip install python-package-qtemplate`
-5) Configure displayed project information
+4) Configure displayed project information
    * Enable releases
    * Disable deployments and packages
+5) Configure settings
+   * General > Automatically delete head branches
 
 =============================================================
 
