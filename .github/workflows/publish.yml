@@ -12,6 +12,7 @@ jobs:
     environment: Release
     permissions:
       id-token: write  # Needed for PyPi publishing
+      contents: write  # Needed for GitHub publishing
     steps:
       - name: Publish
         uses: quintenroets/workflows/publish@main
