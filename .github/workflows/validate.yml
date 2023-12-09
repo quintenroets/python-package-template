@@ -1,12 +1,13 @@
 name: Validate
+description: 'Validate project by running linting, formatting, and testing'
 
 on:
   push:
-
+env:
+  PYTHON_VERSION: "3.12"
 jobs:
   validate:
-    name: Validate
     runs-on: ubuntu-latest
     steps:
-      - name: Validate
-        uses: quintenroets/workflows/validate@main
+    - name: Validate
+      uses: quintenroets/workflows/validate@main
