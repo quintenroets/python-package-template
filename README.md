@@ -18,7 +18,6 @@
    * Enable releases
    * Disable deployments and packages
 =============================================================
-Run
 ```shell
 python_package_template
 ```
@@ -28,7 +27,6 @@ pip install python-package-qtemplate
 ```
 or
 ```shell
-pip install git+https://github.com/quintenroets/python-package-template
+pip install git+https://github.com/quintenroets/python-package-template.git
 ```
-
-Make sure you are using python3.10+
+make sure you are using python3.10+
