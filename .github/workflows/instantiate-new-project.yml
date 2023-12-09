@@ -2,12 +2,12 @@ name: Instantiate new project
 
 on:
   push:
-permissions:
-  contents: write  # Repository will be modified
 jobs:
   instantiate-new-project:
     runs-on: ubuntu-latest
     if: github.repository != 'quintenroets/python-package-template'
+    permissions:
+      contents: write  # Repository will be modified
     steps:
     - name: Instantiate new project
       uses: quintenroets/workflows/instantiate-new-project@main
