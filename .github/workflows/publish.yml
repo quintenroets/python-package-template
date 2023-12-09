@@ -4,15 +4,14 @@ on:
   push:
     branches:
       - main
-permissions:
-  id-token: write  # Needed for PyPi publishing
 
 jobs:
   publish:
     name: Publish package
     runs-on: ubuntu-latest
     environment: Release
-
+    permissions:
+      id-token: write  # Needed for PyPi publishing
     steps:
       - name: Publish
         uses: quintenroets/workflows/publish@main
