@@ -4,8 +4,6 @@ on:
   push:
 permissions:
   contents: write  # Repository will be modified
-env:
-  PYTHON_VERSION: "3.12"
 jobs:
   instantiate-new-project:
     runs-on: ubuntu-latest
