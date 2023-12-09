@@ -22,5 +22,5 @@ Python package published on PyPI
 Make sure you are using python3.10+
 
 ```shell
-pip install python-package-template
+pip install python-package-qtemplate
 ```

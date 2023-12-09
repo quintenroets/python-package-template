@@ -1,5 +1,5 @@
 [project]
-name = "python-package-otherqtemplate"
+name = "python-package-qtemplate"
 version = "0.1.3"
 description = "Python package"
 authors = [{name = "Quinten Roets", email = "qdr2104@columbia.edu"}]
@@ -22,12 +22,10 @@ dev = [
 "Source Code" = "https://github.com/quintenroets/python-package-template"
 
 [project.scripts]
-python_package_template = "python_package_template.main.main:main"
+python_package_template = "python_package_template.cli:main"
 
 [tool.setuptools.package-data]
 python_package_template = ["py.typed"]
-
-
 
 [build-system]
 requires = ["setuptools"]
