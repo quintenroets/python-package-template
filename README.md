@@ -8,11 +8,13 @@ Python package published on PyPI
    * Enable
       1) Choose public package name
       2) Configure trusted publisher on [PyPI](https://pypi.org/manage/account/publishing/)
-      3) Update public package name in
-         * pyproject.toml: name = ..
-         * README.md: pip install .. and remove pip install git+https://github.com
+      3) Update public package name
+         * pyproject.toml: update `name = ..`
+         * README.md:
+           * update `pip install ..`
+           * remove `pip install git+https://github.com..`
    * Disable
-      1) README.md: remove pip install python-package-qtemplate
+      1) README.md: remove `pip install python-package-qtemplate`
 5) Configure displayed project information
    * Enable releases
    * Disable deployments and packages
