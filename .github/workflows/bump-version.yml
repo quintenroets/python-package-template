@@ -1,0 +1,10 @@
+name: Bump version
+
+on:
+  pull-request:
+jobs:
+  bump-version:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Bump version
+      uses: quintenroets/workflows/bump-version@main
