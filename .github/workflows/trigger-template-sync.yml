@@ -1,0 +1,12 @@
+name: Trigger template sync
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  trigger-template-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger template sync
+        uses: quintenroets/workflows/trigger-template-sync@main
