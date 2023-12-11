@@ -38,3 +38,7 @@ repos:
         language: system
         pass_filenames: false
         always_run: true
+
+ci:
+    autofix_commit_msg: auto fixes from pre-commit.com hooks
+    autoupdate_commit_msg: 'pre-commit autoupdate'
