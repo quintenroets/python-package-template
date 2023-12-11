@@ -9,6 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Trigger template sync
-        uses: quintenroets/workflows/trigger-template-sync@main
+        uses: quintenroets/actions/trigger-template-sync@main
         with:
           token: ${{ secrets.TEMPLATE_SYNC_TRIGGER }}

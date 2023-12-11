@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Validate
-      uses: quintenroets/workflows/validate@main
+      uses: quintenroets/actions/validate@main

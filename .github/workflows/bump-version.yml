@@ -8,4 +8,4 @@ jobs:
     if: github.repository != 'quintenroets/python-package-template'
     steps:
     - name: Bump version
-      uses: quintenroets/workflows/bump-version@main
+      uses: quintenroets/actions/bump-version@main

@@ -15,4 +15,4 @@ jobs:
       contents: write  # Needed for GitHub publishing
     steps:
       - name: Publish
-        uses: quintenroets/workflows/publish@main
+        uses: quintenroets/actions/publish@main
