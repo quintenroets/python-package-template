@@ -1,6 +1,7 @@
 # IDE config files
 .idea/
 .vscode/
+test
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
