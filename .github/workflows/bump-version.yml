@@ -5,6 +5,7 @@ on:
 jobs:
   bump-version:
     runs-on: ubuntu-latest
+    if: github.repository != 'quintenroets/python-package-template'
     steps:
     - name: Bump version
       uses: quintenroets/workflows/bump-version@main
