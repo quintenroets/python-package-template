@@ -10,3 +10,5 @@ jobs:
     steps:
       - name: Trigger template sync
         uses: quintenroets/workflows/trigger-template-sync@main
+        with:
+          token: ${{ secrets.TEMPLATE_SYNC_TRIGGER }}
