@@ -7,6 +7,7 @@ on:
 jobs:
   trigger-template-sync:
     runs-on: ubuntu-latest
+    if: github.repository == 'quintenroets/python-package-template'
     steps:
       - name: Trigger template sync
         uses: quintenroets/actions/trigger-template-sync@main
