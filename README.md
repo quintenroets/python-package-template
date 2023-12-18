@@ -36,4 +36,4 @@ or
 ```shell
 pip install git+https://github.com/quintenroets/python-package-template.git
 ```
-make sure to use python3.10+
+make sure to use Python 3.10+
