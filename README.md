@@ -1,7 +1,5 @@
 # Python Package Template
-
 [![PyPI version](https://badge.fury.io/py/superpathlib.svg)](https://badge.fury.io/py/python-package-qtemplate)
-
 ## Usage
 1) Choose repository name
 2) Instantiate new repository from the template repository
