@@ -1,5 +1,7 @@
 # Python Package Template
 
+[![PyPI version](https://badge.fury.io/py/superpathlib.svg)](https://badge.fury.io/py/python-package-qtemplate)
+
 ## Usage
 1) Choose repository name
 2) Instantiate new repository from the template repository
@@ -13,7 +15,9 @@
            * update `pip install ..`
            * remove `pip install git+https://github.com..`
    * Disable
-      1) Update README.md: remove `pip install <package-slug>`
+      1) Update README.md:
+           * remove `pip install <package-slug>`
+           * remove PyPI badge
 4) Configure displayed project information
    * Enable releases
    * Disable deployments and packages
