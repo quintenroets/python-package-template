@@ -12,6 +12,7 @@
          * README.md:
            * update `pip install ..`
            * remove `pip install git+https://github.com..`
+           * update PyPI badge url
    * Disable
       1) Update README.md:
            * remove `pip install <package-slug>`
