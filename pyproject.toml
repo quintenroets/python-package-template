@@ -47,5 +47,5 @@ fix = true
 [tool.mypy]
 strict = true
 
-disallow_untyped_defs = true  # force return type annotations
+disallow_untyped_defs = true  # force argument & return type annotations
 disallow_untyped_decorators = true
