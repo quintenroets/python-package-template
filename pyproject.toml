@@ -24,12 +24,12 @@ dev = [
 [project.scripts]
 python_package_template = "python_package_template.cli:main"
 
-[tool.setuptools.package-data]
-python_package_template = ["py.typed"]
-
 [build-system]
 requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
+
+[tool.setuptools.package-data]
+python_package_template = ["py.typed"]
 
 [tool.ruff]
 select = [
