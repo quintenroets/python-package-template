@@ -5,6 +5,7 @@ on:
 jobs:
   validate:
     runs-on: ubuntu-latest
+    environment: release
     steps:
     - name: Validate
       uses: quintenroets/actions/validate@main
