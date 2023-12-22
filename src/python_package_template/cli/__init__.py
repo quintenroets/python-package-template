@@ -1,1 +1,1 @@
-from .main import main
+from .entry_point import entry_point

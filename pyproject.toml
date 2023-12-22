@@ -7,6 +7,7 @@ license = {text = "MIT"}
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
+    "typer>=0.9"
 ]
 
 [project.optional-dependencies]
@@ -22,7 +23,7 @@ dev = [
 "Source Code" = "https://github.com/quintenroets/python-package-template"
 
 [project.scripts]
-python_package_template = "python_package_template.cli:main"
+python_package_template = "python_package_template.cli:entry_point"
 
 [build-system]
 requires = ["setuptools"]
