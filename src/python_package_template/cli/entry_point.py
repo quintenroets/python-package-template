@@ -1,6 +1,6 @@
 import typer
 
-from .. import main
+from python_package_template import main
 
 
 def entry_point() -> None:
