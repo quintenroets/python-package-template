@@ -23,7 +23,10 @@ repos:
     rev: v1.7.1
     hooks:
       - id: mypy
-        additional_dependencies: ["pytest-mypy-plugins"]
+        additional_dependencies: [
+          "hypothesis",
+          "pytest-mypy-plugins",
+        ]
   - repo: local
     hooks:
       - id: bump-version
