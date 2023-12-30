@@ -34,7 +34,7 @@ build-backend = "setuptools.build_meta"
 [tool.coverage.run]
 command_line = "-m pytest"
 source_pkgs = [
-    "dev_tools",
+    "python_package_template",
 ]
 
 [tool.coverage.report]
