@@ -44,6 +44,11 @@ precision = 4
 strict = true
 no_implicit_reexport = false
 
+[tool.pytest.ini_options]
+pythonpath = [
+  "src"
+]
+
 [tool.ruff]
 select = [
     "E",  # pycodestyle errors
