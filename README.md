@@ -22,7 +22,9 @@
    * Enable releases
    * Disable deployments and packages
 5) Configure settings
-   * General > Automatically delete head branches
+   * General >
+     * Automatically delete head branches
+     * Always suggest updating pull request branches
 
 =============================================================
 
