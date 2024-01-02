@@ -42,7 +42,6 @@ repos:
     rev: d4b5224
     hooks:
       - id: check-coverage
-        pass_filenames: false
 
 
 ci:

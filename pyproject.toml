@@ -1,7 +1,7 @@
 [project]
 name = "python-package-qtemplate"
 version = "0.1.0"
-description = "Python package"
+description = "Template for Python package published on PyPI"
 authors = [{name = "Quinten Roets", email = "qdr2104@columbia.edu"}]
 license = {text = "MIT"}
 readme = "README.md"
@@ -13,9 +13,9 @@ dependencies = [
 [project.optional-dependencies]
 dev = [
     "build",
-    "bump2version",
     "coverage",
     "hypothesis",
+    "package-dev-tools",
     "pre-commit",
     "pytest",
     "pytest-mypy-plugins",
@@ -33,12 +33,10 @@ build-backend = "setuptools.build_meta"
 
 [tool.coverage.run]
 command_line = "-m pytest"
-source_pkgs = [
-    "python_package_template",
-]
 
 [tool.coverage.report]
 precision = 4
+fail_under = 100
 
 [tool.mypy]
 strict = true
