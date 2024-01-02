@@ -2,6 +2,7 @@ import pytest
 from python_package_template import cli
 
 
-@pytest.mark.skip()
 def test_testing() -> None:
-    cli.entry_point()
+    with pytest.raises(SystemExit) as exception:
+        cli.entry_point()
+    assert exception.value.code == 0
