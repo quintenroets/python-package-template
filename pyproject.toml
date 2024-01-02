@@ -14,9 +14,11 @@ dependencies = [
 dev = [
     "build",
     "bump2version",
+    "coverage",
     "hypothesis",
     "pre-commit",
     "pytest",
+    "pytest-mypy-plugins",
 ]
 
 [project.urls]
