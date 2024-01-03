@@ -1,7 +1,6 @@
 # Python Package Template
 [![PyPI version](https://badge.fury.io/py/python-package-qtemplate.svg)](https://badge.fury.io/py/python-package-qtemplate)
 ![Coverage](https://img.shields.io/badge/Coverage-100%25-brightgreen)
-
 ## Usage
 1) Choose repository name
 2) Instantiate new repository from the template repository
