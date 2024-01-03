@@ -15,7 +15,7 @@ dev = [
     "build",
     "coverage",
     "hypothesis",
-    "package-dev-tools",
+    "package-dev-tools>=0.2",
     "pre-commit",
     "pytest",
     "pytest-mypy-plugins",
