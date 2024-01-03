@@ -28,7 +28,7 @@ repos:
           "pytest-mypy-plugins",
         ]
   - repo: https://github.com/quintenroets/package-dev-tools
-    rev: 0bc12e9
+    rev: 180fcfb
     hooks:
       - id: check-version
   - repo: local
@@ -39,7 +39,7 @@ repos:
         language: system
         pass_filenames: false
   - repo: https://github.com/quintenroets/package-dev-tools
-    rev: 0bc12e9
+    rev: 180fcfb
     hooks:
       - id: check-coverage
 
