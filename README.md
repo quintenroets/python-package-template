@@ -25,6 +25,7 @@
    * General >
      * Automatically delete head branches
      * Always suggest updating pull request branches
+
 =============================================================
 Run
 ```shell
