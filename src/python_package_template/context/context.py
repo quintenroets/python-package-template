@@ -1,3 +1,7 @@
+import dataclasses
+from dataclasses import fields, is_dataclass
+import cli
+import os
 from dataclasses import dataclass
 from typing import TypeVar
 
@@ -47,15 +51,23 @@ class Context:
         return self.load_from_file(Config, self.options.config_path)
 
     def load_secrets(self) -> Secrets:
-        type_hooks = {str: self.check_empty}
         secrets_dict = (
             {} if self.config.secrets_path is None else self.config.secrets_path.yaml
         )
-        config = dacite.Config(type_hooks=type_hooks)
-        return dacite.from_dict(Secrets, secrets_dict, config)  # type: ignore
+        self.add_defaults(Secrets)
+        return dacite.from_dict(Secrets, secrets_dict)
 
-    def check_empty(self, value: str) -> str:
-        print("HIER")
-        print(value)
-        exit()
-        return value
+    def add_defaults(self, class_type: type[T], parent_name: str = ""):
+        for field in fields(class_type):
+            full_name = f"{parent_name}.{field.name}" if parent_name else field.name
+            if field.default_factory == dataclasses.MISSING:
+                if is_dataclass(field.type):
+                    self.add_defaults(field.type, full_name)
+                    field.default_factory = lambda: dacite.from_dict(field.type, {})
+                else:
+                    field.default_factory = lambda : self.load_secret(full_name)
+
+    @classmethod
+    def load_secret(cls, name):
+        return os.environ.get(name) or cli.get("pw", name)
+
