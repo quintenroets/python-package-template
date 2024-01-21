@@ -1,7 +1,7 @@
 # Python Package Template
 [![PyPI version](https://badge.fury.io/py/python-package-qtemplate.svg)](https://badge.fury.io/py/python-package-qtemplate)
 ![Python version](https://img.shields.io/badge/python-3.10+-brightgreen)
-![Operating system](https://img.shields.io/badge/os-linux%20%7C%20macOS%20%7C%20windows-brightgreen)
+![Operating system](https://img.shields.io/badge/os-linux%20%7c%20macOS%20%7c%20windows-brightgreen)
 ![Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen)
 
 ## Usage
