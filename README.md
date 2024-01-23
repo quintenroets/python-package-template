@@ -30,7 +30,6 @@
      * Always suggest updating pull request branches
 
 =============================================================
-
 Run
 ```shell
 python_package_template
