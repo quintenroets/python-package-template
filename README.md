@@ -29,8 +29,7 @@
      * Automatically delete head branches
      * Always suggest updating pull request branches
 
-=============================================================
-
+###### ============================================================
 Run
 ```shell
 python_package_template
@@ -43,4 +42,3 @@ or
 ```shell
 pip install git+https://github.com/quintenroets/python-package-template.git
 ```
-make sure to use Python 3.10+
