@@ -7,18 +7,14 @@ license = {text = "MIT"}
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
-    "typer>=0.9"
+    "package-utils >= 0.4, <1",
 ]
 
 [project.optional-dependencies]
 dev = [
-    "build",
-    "coverage",
-    "hypothesis",
-    "package-dev-tools>=0.2",
-    "pre-commit",
-    "pytest",
-    "pytest-mypy-plugins",
+    "package-dev-tools >= 0.3, <1",
+    "hypothesis >= 6.91, <7",
+    "package-dev-utils >= 0.1, <1",
 ]
 
 [project.urls]

@@ -1,8 +1,7 @@
-import pytest
+from package_dev_utils.tests.args import no_cli_args
 from python_package_template import cli
 
 
+@no_cli_args
 def test_testing() -> None:
-    with pytest.raises(SystemExit) as exception:
-        cli.entry_point()
-    assert exception.value.code == 0
+    cli.entry_point()
