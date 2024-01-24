@@ -28,6 +28,8 @@
    * General >
      * Automatically delete head branches
      * Always suggest updating pull request branches
+   * Actions > General > Workflow permissions
+     * 	Allow GitHub Actions to create and approve pull requests
 
 ###### ============================================================
 Run

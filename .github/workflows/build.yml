@@ -37,10 +37,10 @@ jobs:
         python-version: ${{ fromJSON(needs.extract-python-versions.outputs.versions) }}
     runs-on: ${{ matrix.os }}
     steps:
-    - name: Run tests
-      uses: quintenroets/package-dev-tools/actions/validate/tests@main
-      with:
-        python-version: ${{ matrix.python-version }}
+      - name: Run tests
+        uses: quintenroets/package-dev-tools/actions/validate/tests@main
+        with:
+          python-version: ${{ matrix.python-version }}
 
   publish:
     name: Publish package

@@ -7,14 +7,14 @@ license = {text = "MIT"}
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
-    "package-utils >= 0.4, <1",
+    "package-utils >=0.4, <1",
 ]
 
 [project.optional-dependencies]
 dev = [
-    "package-dev-tools >= 0.3, <1",
-    "hypothesis >= 6.91, <7",
-    "package-dev-utils >= 0.1, <1",
+    "hypothesis >=6.91, <7",
+    "package-dev-tools >=0.3, <1",
+    "package-dev-utils >=0.1, <1",
 ]
 
 [project.urls]
@@ -37,10 +37,11 @@ fail_under = 100
 [tool.mypy]
 strict = true
 no_implicit_reexport = false
+explicit_package_bases = true
 
 [tool.pytest.ini_options]
 pythonpath = [
-  "src"
+    "src", ".",
 ]
 
 [tool.ruff]
