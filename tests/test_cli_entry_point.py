@@ -3,5 +3,5 @@ from python_package_template import cli
 
 
 @no_cli_args
-def test_testing() -> None:
+def test_entry_point() -> None:
     cli.entry_point()
