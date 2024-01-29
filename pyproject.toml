@@ -12,7 +12,6 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = [
-    "hypothesis >=6.91.0, <7",
     "package-dev-tools >=0.3.0, <1",
     "package-dev-utils >=0.1.0, <1",
 ]
