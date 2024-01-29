@@ -1,5 +1,7 @@
-from package_utils.cli import create_entry_point
+from package_utils.context.entry_point import create_entry_point
 
 from python_package_template import main
 
-entry_point = create_entry_point(main)
+from ..context import context
+
+entry_point = create_entry_point(main, context)
