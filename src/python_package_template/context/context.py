@@ -1,6 +1,5 @@
-from package_utils.context import Context, Models
+from package_utils.context import Context
 
 from ..models import Config, Options, Secrets
 
-models = Models(Options, Config, Secrets)
-context = Context(models)
+context = Context(Options, Config, Secrets)
