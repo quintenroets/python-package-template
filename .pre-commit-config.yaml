@@ -43,15 +43,15 @@ repos:
         always_run: true
         fail_fast: true
   - repo: https://github.com/quintenroets/package-dev-tools
-    rev: v0.3.8
+    rev: v0.4.0
     hooks:
       - id: check-coverage
   - repo: https://github.com/quintenroets/package-dev-tools
-    rev: v0.3.8
+    rev: v0.4.0
     hooks:
       - id: check-shields
   - repo: https://github.com/quintenroets/package-dev-tools
-    rev: v0.3.8
+    rev: v0.4.0
     hooks:
       - id: check-version
 
