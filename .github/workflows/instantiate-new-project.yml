@@ -10,4 +10,4 @@ jobs:
       contents: write  # Repository will be modified
     steps:
     - name: Instantiate new project
-      uses: quintenroets/package-dev-tools/actions/instantiate-new-project@main
+      uses: quintenroets/actions/instantiate-new-project@main
