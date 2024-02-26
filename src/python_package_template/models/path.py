@@ -1,10 +1,10 @@
 from __future__ import annotations
 
-import plib
+import superpathlib
 from simple_classproperty import classproperty
 
 
-class Path(plib.Path):
+class Path(superpathlib.Path):
     @classproperty
     def source_root(cls) -> Path:
         return cls(__file__).parent.parent  # type: ignore
