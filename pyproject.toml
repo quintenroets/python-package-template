@@ -7,13 +7,13 @@ license = {text = "MIT"}
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
-    "package-utils[context] >=0.5.0, <1",
+    "package-utils[context] >=0.6.1, <1",
 ]
 
 [project.optional-dependencies]
 dev = [
-    "package-dev-tools >=0.3.0, <1",
-    "package-dev-utils >=0.1.0, <1",
+    "package-dev-tools >=0.5.11, <1",
+    "package-dev-utils >=0.1.6, <1",
 ]
 
 [project.urls]
