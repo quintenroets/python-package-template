@@ -23,6 +23,6 @@ class Path(superpathlib.Path):
 
     @classmethod
     @classproperty
-    def config(cls: type[T]) -> Path:
+    def config(cls: type[T]) -> T:
         path = cls.assets / "config" / "config.yaml"
         return typing.cast(T, path)
