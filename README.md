@@ -28,6 +28,7 @@
    * General >
      * Automatically delete head branches
      * Always suggest updating pull request branches
+     * Disable allow merge commits
    * Actions > General > Workflow permissions
      * 	Allow GitHub Actions to create and approve pull requests
 6) Enable pre-commit CI
