@@ -1,1 +1,1 @@
-from python_package_template.context.context import Context, context
+from .context import Context, context

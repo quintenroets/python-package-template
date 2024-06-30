@@ -1,1 +1,1 @@
-from python_package_template.main.main import main
+from .main import main

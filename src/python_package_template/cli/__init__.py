@@ -1,1 +1,1 @@
-from python_package_template.cli.entry_point import entry_point
+from .entry_point import entry_point

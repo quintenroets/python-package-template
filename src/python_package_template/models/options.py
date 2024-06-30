@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 
-from python_package_template.models.path import Path
+from .path import Path
 
 
 @dataclass
