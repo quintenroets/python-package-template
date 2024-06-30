@@ -9,6 +9,10 @@ repos:
     hooks:
       - id: ruff
       - id: ruff-format
+  - repo: https://github.com/MarcoGorelli/absolufy-imports
+    rev: v0.3.1
+    hooks:
+      - id: absolufy-imports
   - repo: https://github.com/psf/black
     rev: 24.4.2
     hooks:

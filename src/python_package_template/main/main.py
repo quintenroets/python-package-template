@@ -1,4 +1,6 @@
-from ..context import context
+import cli
+
+from python_package_template.context import context
 
 
 def main() -> None:
@@ -7,5 +9,5 @@ def main() -> None:
     """
     message = "main functionality"
     if context.options.debug:
-        print(message)
-    print(context.secrets)
+        cli.console.print(message)
+    cli.console.print(context.secrets)
