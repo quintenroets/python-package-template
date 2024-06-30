@@ -8,6 +8,7 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "package-utils[context] >=0.6.1, <1",
+    "powercli >=0.3.2, <1",
 ]
 
 [project.optional-dependencies]
@@ -46,12 +47,13 @@ pythonpath = [
 fix = true
 
 [tool.ruff.lint]
-select = [
-    "E",  # pycodestyle errors
-    "W",  # pycodestyle warnings
-    "F",  # pyflakes
-    "I",  # isort
-    "UP",  # pyupgrade
+select = ["ALL"]
+ignore = [
+    "ANN101",  # annotate self
+    "ANN102",  # annotate cls
+    "ANN401",  # annotated with Any
+    "D", # docstrings
+    "S101", # assert used
 ]
 
 [tool.ruff.lint.isort]
