@@ -1,9 +1,10 @@
-from dataclasses import dataclass
+import os
+from dataclasses import dataclass, field
 
 
 @dataclass
 class ApiSecrets:
-    token: str = "token"
+    token: str = field(default_factory=lambda: os.environ.get("API_TOKEN", ""))
 
 
 @dataclass
