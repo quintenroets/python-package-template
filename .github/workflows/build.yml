@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Check pre-commit
         id: check-pre-commit
-        uses: quintenroets/actions/validate/pre-commit@makefile
+        uses: quintenroets/actions/validate/pre-commit@main
 
   extract-python-versions:
     name: Extract Python versions
@@ -32,7 +32,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - name: Run tests
-        uses: quintenroets/actions/validate/tests@makefile
+        uses: quintenroets/actions/validate/tests@main
         with:
           python-version: ${{ matrix.python-version }}
 
