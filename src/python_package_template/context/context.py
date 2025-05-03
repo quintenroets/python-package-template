@@ -1,5 +1,7 @@
 from package_utils.context import Context
 
-from python_package_template.models import Config, Options, Secrets
+from .config import Config
+from .options import Options
+from .secrets_ import Secrets
 
 context = Context(Options, Config, Secrets)
