@@ -30,6 +30,8 @@ repos:
         pass_filenames: false
       - entry: check-version
         pass_filenames: false
+      - entry: check-import
+        pass_filenames: false
 
 ci:
     autofix_commit_msg: auto fixes from pre-commit hooks

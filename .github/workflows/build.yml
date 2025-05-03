@@ -4,11 +4,11 @@ on:
   push:
 
 jobs:
-  check-pre-commit:
-    name: Check pre-commit hooks
+  check-quality:
+    name: Check quality
     runs-on: ubuntu-latest
     steps:
-      - name: Check pre-commit hooks
+      - name: Check quality
         uses: quintenroets/actions/validate/pre-commit@main
 
   verify-packaging:
