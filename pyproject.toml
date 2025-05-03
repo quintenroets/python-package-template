@@ -13,15 +13,12 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = [
-    "package-dev-tools >=0.6.9, <1",
+    "package-dev-tools >=0.7.0, <1",
     "package-dev-utils >=0.1.6, <1",
 ]
 
 [project.urls]
 "Source Code" = "https://github.com/quintenroets/python-package-template"
-
-[tool.uv.sources]
-package-dev-tools = { git = "https://github.com/quintenroets/package-dev-tools.git", rev = "makefile" }
 
 [project.scripts]
 python-package-template = "python_package_template.cli:entry_point"
