@@ -32,8 +32,6 @@
      * Disable allow merge commits
    * Actions > General > Workflow permissions
      * 	Allow GitHub Actions to create and approve pull requests
-6) Enable pre-commit CI
-   * Add project to [pre-commit ci app](https://github.com/settings/installations/48618708)
 
 ###### ============================================================
 Run
